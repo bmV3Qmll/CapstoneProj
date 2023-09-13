@@ -10,8 +10,48 @@ Task 1:
     - Students + Availability: Tuấn Anh
     - SPSO + Security: Lê Đức Hoàng Nam
     - HCMUT Uni + Performance: Lê Văn Hùng
-  1.3 Use-case diagram + description: Nguyen Xuan Thanh
-Task 2:
-Task 3:
+  1.3 Use-case diagram + description: Nguyễn Xuân Thành
+
+Task 2 + 3:
+  - 2.1 Activity diagram + paragraph:
+  - 2.2 Sequence diagram + paragraph:
+  - 2.3 Class diagram + paragraph:
+  - 3.2 Component diagram + paragraph:
+  
+  !!!!!!!!! 4 diagrams CÙNG 1 MODULE -> 4 NGƯỜI CHỌN CHUNG 1 MODULE ĐỂ LÀM.
+  Ex: Print document module ở bảng và diagram cuối phần 1.3
+  Hint diagram:
+    Vào https://online.visual-paradigm.com/app/diagrams/
+    Sign up (có thể dùng temp mail) -> để save và export ra dạng ảnh.
+    Làm xong ném lên github và folder Image ở Latex.
+  Mỗi diagram có 1 đoạn paragraph để miêu tả viết thẳng vào trang Latex.
+
+  - 2.4 UI design (2 NGƯỜI): 
+  Thiết kế (không cần frontend / backend) các page:
+    Homepage gồm title, intro, navigation bar (link tới các trang khác), login button
+        |
+        V
+    Login page (cho students)
+        |
+        V
+    User page (cho students) liên kết đến các trang phụ:
+      Print document
+      Buy printing page
+      View printing history + number of printed pages for each page size
+    
+    Admin login (cho SPSO): truy cập từ đường link ẩn, không truy cập từ Login button ở Homepage
+        |
+        V
+    Admin page (cho SPSO) liên kết đến các trang phụ:
+      Change system configuration gồm: change default number of pages, dates to give pages to students, permitted file type
+      Add / enable / disable printer
+      View report
+
+  !!!!!!!!! DESKTOP-view central dashboard
+  !!!!!!!!! Ngôn ngữ: VIETNAMESE
+  Nên dùng Figma hoặc Adobe XD để sau này export ra HTML/CSS
+  https://www.youtube.com/watch?v=goI6JHO99Qg
+
+  - 3.1 Layered architecture design + paragraphs: Nguyễn Xuân Thành
 Task 4:
 Task 5:
