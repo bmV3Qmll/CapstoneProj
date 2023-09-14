@@ -13,18 +13,17 @@ Task 1:
   1.3 Use-case diagram + description: Nguyễn Xuân Thành
 
 Task 2 + 3:
-  - 2.1 Activity diagram + paragraph:
-  - 2.2 Sequence diagram + paragraph:
-  - 2.3 Class diagram + paragraph:
-  - 3.2 Component diagram + paragraph:
+  - 2.1   1 activity diagram for EACH MODULE/use case + 1 paragraph for each diagram:
+  - 2.2   1 sequence diagram for EACH MODULE/use case + 1 paragraph for each diagram:
+  - 2.3   1 class diagram for the WHOLE MODULE:
+  - 3.2   1 component diagram for the WHOLE MODULE:
   
-  !!!!!!!!! 4 diagrams CÙNG 1 MODULE -> 4 NGƯỜI CHỌN CHUNG 1 MODULE ĐỂ LÀM.
-  Ex: Print document module ở bảng và diagram cuối phần 1.3
+  !!!!!!!!! Có NHIỀU ACTIVITY và SEQUENCE diagram. MODULE lấy từ task 1.3 (có 4 module). Mỗi diagram có 1 đoạn paragraph để miêu tả.
+  !!!!!!!!! 1 CLASS và 1 COMPONENT diagram cho cả hệ thống.
   Phần mềm diagram:
     MS PowerPoint,
     https://online.visual-paradigm.com/app/diagrams/ -> Sign up (có thể dùng temp mail) -> export ra JPEG
     Làm xong port lên github và folder Figure ở Latex.
-  Mỗi diagram có 1 đoạn paragraph để miêu tả.
 
   - 2.4 UI design (2 NGƯỜI): 
   Thiết kế (không cần frontend / backend) các page:
@@ -38,10 +37,7 @@ Task 2 + 3:
       Print document
       Buy printing page
       View printing history + number of printed pages for each page size
-    
-    Admin login (cho SPSO): truy cập từ đường link ẩn, không truy cập từ Login button ở Homepage
-        |
-        V
+
     Admin page (cho SPSO) liên kết đến các trang phụ:
       Change system configuration gồm: change default number of pages, dates to give pages to students, permitted file type
       Add / enable / disable printer
@@ -49,7 +45,8 @@ Task 2 + 3:
 
   !!!!!!!!! DESKTOP-view central dashboard
   !!!!!!!!! Ngôn ngữ: VIETNAMESE
-  Nên dùng Figma hoặc Adobe XD để sau này export ra HTML/CSS
+  Tham khảo phần 3.1 để rõ hơn về từng trang.
+  Nên dùng Figma hoặc Adobe XD để sau này export ra HTML/CSS.
   https://www.youtube.com/watch?v=goI6JHO99Qg
 
   - 3.1 Layered architecture design + paragraphs: Nguyễn Xuân Thành
