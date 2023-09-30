@@ -25,7 +25,7 @@ Task 2 + 3:
     https://online.visual-paradigm.com/app/diagrams/ -> Sign up (có thể dùng temp mail) -> export ra JPEG
     Làm xong port lên github và folder Figure ở Latex.
 
-  - 2.4 UI design (2 NGƯỜI): 
+  - 2.4 UI design (2 NGƯỜI): Lê Đức Hoàng Nam
   Thiết kế (không cần frontend / backend) các page:
     Homepage gồm title, intro, navigation bar (link tới các trang khác), login button
         |
