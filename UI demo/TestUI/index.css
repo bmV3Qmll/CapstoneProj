@@ -1,0 +1,200 @@
+.header-child {
+  position: absolute;
+  top: 143px;
+  left: 57px;
+  width: 676.89px;
+  height: 508.2px;
+}
+.blabla {
+  position: relative;
+  font-weight: 500;
+}
+.blabla-wrapper {
+  border-radius: 9.16px;
+  background-color: rgba(56, 80, 208, 0.66);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 7.631442546844482px 12.210308074951172px;
+}
+.bla {
+  position: relative;
+  font-size: 48.84px;
+  font-weight: 500;
+  color: var(--text-title);
+  display: inline-block;
+  width: 458.65px;
+}
+.frame-parent7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 18.32px;
+}
+.blablabla {
+  position: relative;
+  font-size: 13.74px;
+  line-height: 23.66px;
+  color: var(--text-content);
+}
+.frame-parent6 {
+  position: absolute;
+  top: 253px;
+  left: 206px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30.53px;
+}
+.image-6-icon {
+  position: absolute;
+  top: 199px;
+  left: 640px;
+  width: 665px;
+  height: 370px;
+  object-fit: cover;
+}
+.chevron-icon {
+  position: relative;
+  width: 18.32px;
+  height: 18.32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.component-3 {
+  position: absolute;
+  top: 504.63px;
+  left: 206px;
+  border-radius: 3.05px;
+  background-color: var(--btn-main);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 9.157731056213379px 10.684019088745117px 9.157731056213379px
+    16.789173126220703px;
+  gap: 4.58px;
+  text-align: right;
+  color: var(--color-whitesmoke-100);
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white1);
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+}
+.content10,
+.sort-icon {
+  position: relative;
+}
+.sort-icon {
+  width: 15.26px;
+  height: 15.26px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6.11px;
+}
+.sort-icon1 {
+  position: relative;
+  width: 15.26px;
+  height: 15.26px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.menu-parent {
+  position: absolute;
+  top: calc(50% - 8.47px);
+  left: calc(50% - 260px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30.53px;
+}
+.image-1-icon10 {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+.student-smart-printing {
+  position: relative;
+  display: inline-block;
+  width: 123px;
+  flex-shrink: 0;
+  -webkit-text-stroke: 1px #000;
+}
+.frame-parent8,
+.image-1-parent {
+  position: absolute;
+  background-color: var(--color-white1);
+}
+.image-1-parent {
+  top: 3px;
+  left: 104px;
+  border-radius: var(--br-5xs);
+  border: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 164px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0 var(--padding-3xs) var(--padding-5xs);
+  gap: var(--gap-9xs);
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.frame-parent8 {
+  top: 0;
+  left: -5px;
+  box-shadow: 0 3.052577018737793px 15.26px rgba(1, 1, 1, 0.08);
+  width: 1285px;
+  height: 61px;
+  overflow: hidden;
+  font-size: 13.74px;
+  color: var(--text-title);
+}
+.component-31 {
+  position: absolute;
+  top: 12.21px;
+  left: 1075.61px;
+  border-radius: 3.05px;
+  background-color: #3322f1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 9.157731056213379px 10.684019088745117px 9.157731056213379px
+    16.789173126220703px;
+  gap: 4.58px;
+  text-align: right;
+  color: var(--color-white1);
+}
+.homepage {
+  position: relative;
+  border-radius: 0 var(--br-11xl) var(--br-11xl) 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 12.21px;
+  color: #101011;
+  font-family: var(--font-inter);
+}

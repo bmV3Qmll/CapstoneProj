@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-abel: Abel;
+  --font-montserrat: Montserrat;
+  --font-roboto: Roboto;
+  --font-alegreya-sans: "Alegreya Sans";
+  --font-inter: Inter;
+  --font-poppins: Poppins;
+  --font-abeezee: ABeeZee;
+  --font-zen-kaku-gothic-antique: "Zen Kaku Gothic Antique";
+  --font-itim: Itim;
+
+  /* font sizes */
+  --font-size-xs: 12px;
+  --font-size-5xl: 24px;
+  --font-size-sm: 14px;
+  --font-size-3xs: 10px;
+  --font-size-base: 16px;
+  --font-size-4xs: 9px;
+  --font-size-smi-8: 12.8px;
+  --font-size-smi-2: 12.2px;
+  --font-size-sm-7: 13.7px;
+  --font-size-21xl: 40px;
+  --font-size-111xl: 130px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-darkslategray-100: #464a59;
+  --text-title: #273552;
+  --color-darkslategray-200: rgba(38, 50, 56, 0.19);
+  --color-white1: #fff;
+  --color-gray-100: #777;
+  --color-gray-200: #222;
+  --color-gray-300: #1a1a1a;
+  --color-gray-400: #181818;
+  --black: #030723;
+  --color-gray-500: rgba(0, 0, 0, 0.12);
+  --color-gray-600: rgba(0, 0, 0, 0.1);
+  --color-gray-700: rgba(0, 0, 0, 0.9);
+  --color-midnightblue: #002b9a;
+  --color-mediumblue-100: #0048ff;
+  --color-mediumblue-200: #181fc3;
+  --color-whitesmoke-100: #f6f6f6;
+  --color-whitesmoke-200: #ece8e8;
+  --color-mediumslateblue-100: #425ef3;
+  --btn-main: #2f54eb;
+  --color-red: #ff0a00;
+  --color-ghostwhite: #f1f4fe;
+  --color-dimgray: #717171;
+  --color-cornflowerblue-100: #afb3ff;
+  --color-cornflowerblue-200: #3690e3;
+  --color-cornflowerblue-300: rgba(175, 179, 255, 0);
+  --color-darkgray: rgba(183, 178, 178, 0.68);
+  --color-lime: #00ff38;
+  --color-limegreen: #2cb620;
+  --color-gainsboro: #dbdbdb;
+  --color-lightgray: #cbcbcb;
+  --color-silver: #bdbdbd;
+  --text-content: #495871;
+  --color-royalblue-100: #656ed3;
+  --color-lavender: #ebefff;
+  --color-blue: #3709ef;
+  --color-darkblue: #212abc;
+
+  /* Gaps */
+  --gap-5xl: 24px;
+  --gap-5xs: 8px;
+  --gap-xs: 12px;
+  --gap-9xs: 4px;
+  --gap-8xs-6: 4.6px;
+  --gap-11xl-5: 30.5px;
+  --gap-6xs-1: 6.1px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+  --padding-3xs: 10px;
+  --padding-xs: 12px;
+  --padding-3xs-2: 9.2px;
+  --padding-2xs-7: 10.7px;
+  --padding-base-8: 16.8px;
+  --padding-5xs: 8px;
+
+  /* Border radiuses */
+  --br-8xs: 5px;
+  --br-6xs: 7px;
+  --br-5xs: 8px;
+  --br-11xs: 2px;
+  --br-7xs: 6px;
+  --br-11xl: 30px;
+  --br-9xs-1: 3.1px;
+  --br-31xl: 50px;
+  --br-86xl-5: 105.5px;
+  --br-6xl: 25px;
+}

@@ -1,0 +1,114 @@
+.login-child,
+.login-item {
+  position: absolute;
+  border-radius: 105.53px;
+}
+.login-child {
+  top: 536.2px;
+  left: -100.74px;
+  background-color: var(--color-mediumblue-100);
+  width: 635px;
+  height: 826.53px;
+  transform: rotate(-97.17deg);
+  transform-origin: 0 0;
+}
+.login-item {
+  top: 0;
+  left: 99px;
+  width: 377px;
+  height: 488px;
+}
+.please-choose-method {
+  position: absolute;
+  top: 92px;
+  left: 818px;
+  font-size: var(--font-size-base);
+}
+.group-child8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-cornflowerblue-300);
+  border: 1px solid var(--color-royalblue-100);
+  box-sizing: border-box;
+  width: 367px;
+  height: 118px;
+}
+.login-as-student {
+  position: absolute;
+  top: 35px;
+  left: 22px;
+}
+.group-child9,
+.rectangle-parent4 {
+  position: absolute;
+  width: 367px;
+  height: 118px;
+}
+.rectangle-parent4 {
+  top: 164px;
+  left: 756px;
+  cursor: pointer;
+  color: var(--color-midnightblue);
+}
+.group-child9 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-royalblue-100);
+}
+.login-as-spso {
+  position: absolute;
+  top: 35px;
+  left: 53px;
+}
+.rectangle-parent5 {
+  position: absolute;
+  top: 392px;
+  left: 756px;
+  width: 367px;
+  height: 118px;
+  cursor: pointer;
+  color: #f5f5f5;
+}
+.objectother-07-icon {
+  position: absolute;
+  height: 68.33%;
+  width: 41.88%;
+  top: 28.47%;
+  right: 54.69%;
+  bottom: 3.19%;
+  left: 3.44%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.image-1-icon11,
+.login-inner {
+  position: absolute;
+  top: 342px;
+  left: 769px;
+  width: 338.5px;
+  height: 1px;
+}
+.image-1-icon11 {
+  top: 536px;
+  left: 884px;
+  width: 117px;
+  height: 126px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.login {
+  position: relative;
+  background-color: var(--color-lavender);
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-inter);
+}

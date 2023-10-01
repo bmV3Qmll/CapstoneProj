@@ -1,0 +1,144 @@
+.loginstudentpage-child {
+  position: absolute;
+  top: 0;
+  left: 842px;
+  background-color: var(--color-darkblue);
+  width: 438px;
+  height: 720px;
+}
+.loginstudentpage-inner,
+.loginstudentpage-item {
+  position: absolute;
+  top: 250px;
+  left: 169px;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-cornflowerblue-300);
+  border: 1px solid var(--color-royalblue-100);
+  box-sizing: border-box;
+  width: 367px;
+  height: 34px;
+}
+.loginstudentpage-inner {
+  top: 326px;
+}
+.username1,
+.you-belong-to1 {
+  position: absolute;
+  top: 220px;
+  left: 169px;
+}
+.you-belong-to1 {
+  top: 479px;
+  left: 187px;
+}
+.login-as-student1 {
+  position: absolute;
+  top: 177px;
+  left: 286px;
+  color: var(--color-gray-300);
+}
+.group-child11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-royalblue-100);
+  width: 365px;
+  height: 34px;
+}
+.login2 {
+  position: absolute;
+  top: 8px;
+  left: 161px;
+  font-weight: 500;
+}
+.rectangle-parent7 {
+  position: absolute;
+  top: 402px;
+  left: 171px;
+  width: 365px;
+  height: 34px;
+  cursor: pointer;
+  color: var(--color-cornflowerblue-100);
+}
+.password2 {
+  position: absolute;
+  top: 296px;
+  left: 171px;
+}
+.image-1-icon13 {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+.sign-in-as1 {
+  position: relative;
+  display: inline-block;
+  width: 123px;
+  flex-shrink: 0;
+}
+.image-1-container {
+  position: absolute;
+  top: 460px;
+  left: 372px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white1);
+  border: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 164px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0 var(--padding-3xs) var(--padding-5xs);
+  gap: var(--gap-9xs);
+  cursor: pointer;
+  color: var(--color-gray-400);
+}
+.image-2-icon {
+  position: absolute;
+  top: 177px;
+  left: 556px;
+  border-radius: var(--br-6xl);
+  width: 573px;
+  height: 339px;
+  object-fit: cover;
+}
+.student {
+  position: absolute;
+  top: 15px;
+  left: 62.69px;
+  font-size: var(--font-size-111xl);
+  text-transform: uppercase;
+  font-family: var(--font-itim);
+  color: var(--color-blue);
+  display: inline-block;
+  width: 565.87px;
+  height: 117px;
+  text-shadow: 0 4px 4px #e4e5f3;
+  transform: rotate(0.34deg);
+  transform-origin: 0 0;
+  mix-blend-mode: hard-light;
+}
+.image-4-icon {
+  position: absolute;
+  top: 616px;
+  left: 0;
+  width: 842px;
+  height: 105px;
+  object-fit: cover;
+  mix-blend-mode: overlay;
+}
+.loginstudentpage {
+  position: relative;
+  background-color: var(--color-lavender);
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
