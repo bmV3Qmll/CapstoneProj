@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./StudSeleFile.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alegreya Sans:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Radio Canada:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Abel:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="studselefile">
+      <div class="template-6sign-up7">
+        <div class="bg-main13"></div>
+        <div class="bg-main-group">
+          <div class="bg-main14"></div>
+          <div class="upload-files1">
+            <div class="upload-files-inner"></div>
+            <div class="upload-files-child1"></div>
+            <div class="rectangle-parent3">
+              <div class="group-child6"></div>
+              <div class="ti-ln">Tải lên</div>
+            </div>
+            <div class="rectangle-parent4" id="groupContainer1">
+              <div class="group-child6"></div>
+              <div class="ti-ln">Tiếp</div>
+            </div>
+            <div class="upload-files-child2"></div>
+            <div class="ko-v-th-container">
+              <p class="ko-v-th">Kéo và thả file để tải lên.</p>
+              <p class="ko-v-th">Hiện chỉ hỗ trợ PDF.</p>
+            </div>
+            <b class="chn-vn-bn">Chọn văn bản </b>
+            <div class="in-vn-bn1">In văn bản</div>
+            <div class="div38">
+              <img
+                class="document-icon-36560-1"
+                alt=""
+                src="./public/documenticon36560-1@2x.png"
+              />
+            </div>
+            <div class="upload-files-child3"></div>
+          </div>
+        </div>
+        <div class="right-section7">
+          <img class="right-bg-icon7" alt="" src="./public/rightbg@2x.png" />
+
+          <div class="right-bg-overlay-27"></div>
+        </div>
+      </div>
+      <div class="sidebar-open7">
+        <div class="profil7">
+          <img class="image-1-icon8" alt="" src="./public/image-11@2x.png" />
+
+          <div class="content7">
+            <div class="title7">ABC</div>
+            <div class="overline7">sinh viên</div>
+          </div>
+        </div>
+        <div class="divider7"></div>
+        <div class="navigation14">
+          <div class="link35">
+            <img
+              class="analytics-1-icon3"
+              alt=""
+              src="./public/analytics-1.svg"
+            />
+
+            <div class="label35">In văn bản</div>
+          </div>
+          <div class="link36" id="linkContainer1">
+            <img
+              class="basket-alt-3-icon3"
+              alt=""
+              src="./public/basket-alt-3.svg"
+            />
+
+            <div class="label35">Mua giấy in</div>
+          </div>
+          <div class="link37" id="linkContainer2">
+            <img
+              class="analytics-1-icon3"
+              alt=""
+              src="./public/icon--calendar1.svg"
+            />
+
+            <div class="label35">Lịch sử in</div>
+          </div>
+        </div>
+        <div class="navigation15">
+          <div class="link38">
+            <img
+              class="analytics-1-icon3"
+              alt=""
+              src="./public/icon--helpcircle1.svg"
+            />
+
+            <div class="label35">Trợ giúp</div>
+          </div>
+          <div class="link39" id="linkContainer4">
+            <img
+              class="analytics-1-icon3"
+              alt=""
+              src="./public/icon--logout1.svg"
+            />
+
+            <div class="label35">Đăng xuất</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var groupContainer1 = document.getElementById("groupContainer1");
+      if (groupContainer1) {
+        groupContainer1.addEventListener("click", function (e) {
+          window.location.href = "./StudCfmPr.html";
+        });
+      }
+      
+      var linkContainer1 = document.getElementById("linkContainer1");
+      if (linkContainer1) {
+        linkContainer1.addEventListener("click", function (e) {
+          window.location.href = "./StudBKP.html";
+        });
+      }
+      
+      var linkContainer2 = document.getElementById("linkContainer2");
+      if (linkContainer2) {
+        linkContainer2.addEventListener("click", function (e) {
+          window.location.href = "./StudLog.html";
+        });
+      }
+      
+      var linkContainer4 = document.getElementById("linkContainer4");
+      if (linkContainer4) {
+        linkContainer4.addEventListener("click", function (e) {
+          window.location.href = "./LoginStudentPage.html";
+        });
+      }
+      </script>
+  </body>
+</html>

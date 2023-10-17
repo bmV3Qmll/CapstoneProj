@@ -1,0 +1,146 @@
+.loginspsopage-child {
+  position: absolute;
+  top: 0;
+  left: 842px;
+  background-color: var(--color-darkblue);
+  width: 438px;
+  height: 720px;
+}
+.loginspsopage-inner,
+.loginspsopage-item {
+  position: absolute;
+  top: 250px;
+  left: 122px;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-cornflowerblue-300);
+  border: 1px solid var(--color-royalblue-100);
+  box-sizing: border-box;
+  width: 367px;
+  height: 34px;
+}
+.loginspsopage-inner {
+  top: 326px;
+}
+.tn-ng-nhp1 {
+  position: absolute;
+  top: 220px;
+  left: 122px;
+}
+.bn-l-sinh,
+.trang-ng-nhp2 {
+  position: absolute;
+  top: 484px;
+  left: 124px;
+}
+.trang-ng-nhp2 {
+  top: 177px;
+  left: 199px;
+  color: var(--color-gray-300);
+}
+.group-child10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-royalblue-100);
+  width: 365px;
+  height: 34px;
+}
+.login1 {
+  position: absolute;
+  top: 7px;
+  left: 161px;
+  font-weight: 500;
+}
+.rectangle-parent7 {
+  position: absolute;
+  top: 402px;
+  left: 124px;
+  width: 365px;
+  height: 34px;
+  cursor: pointer;
+  color: var(--color-cornflowerblue-100);
+}
+.mt-khu1 {
+  position: absolute;
+  top: 296px;
+  left: 124px;
+}
+.image-1-icon13 {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+.trang-ng-nhp3 {
+  position: relative;
+  display: inline-block;
+  width: 149px;
+  flex-shrink: 0;
+}
+.image-1-container {
+  position: absolute;
+  top: 460px;
+  left: 303px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white1);
+  border: 1px solid var(--color-gray-700);
+  box-sizing: border-box;
+  width: 186px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0 var(--padding-3xs) var(--padding-5xs);
+  gap: var(--gap-9xs);
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-gray-400);
+}
+.image-3-icon,
+.image-5-icon {
+  position: absolute;
+  object-fit: cover;
+}
+.image-3-icon {
+  top: 177px;
+  left: 556px;
+  border-radius: var(--br-6xl);
+  width: 573px;
+  height: 339px;
+}
+.image-5-icon {
+  top: 615px;
+  left: 0;
+  width: 846px;
+  height: 105px;
+  mix-blend-mode: overlay;
+}
+.spso1 {
+  position: absolute;
+  top: 16px;
+  left: 148.69px;
+  font-size: var(--font-size-111xl);
+  text-transform: uppercase;
+  font-family: var(--font-itim);
+  color: var(--color-blue);
+  display: inline-block;
+  width: 349.94px;
+  height: 117px;
+  text-shadow: 0 4px 4px #e4e5f3;
+  transform: rotate(0.34deg);
+  transform-origin: 0 0;
+  mix-blend-mode: hard-light;
+}
+.loginspsopage {
+  position: relative;
+  background-color: var(--color-lavender);
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--dispaly-16-medium-size);
+  color: var(--color-black);
+  font-family: var(--dispaly-16-medium);
+}
