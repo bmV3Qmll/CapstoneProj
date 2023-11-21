@@ -8,14 +8,6 @@
     <link rel="stylesheet" href="./SPSOConfPr.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Alegreya Sans:wght@400&display=swap"
     />
     <link
@@ -24,11 +16,11 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Radio Canada:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
     />
     <link
       rel="stylesheet"
@@ -36,11 +28,19 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Abel:wght@400&display=swap"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Abel:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Zen Kaku Gothic Antique:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
     />
   </head>
   <body>
@@ -56,12 +56,12 @@
 
             <div class="right-bg-overlay-25"></div>
           </div>
-          <b class="chn-my-in">Chọn máy in </b>
-          <b class="thm-my-in">Thêm máy in </b>
+          <b class="select-printer">Chọn máy in</b>
+          <b class="add-printer">Thêm máy in</b>
         </div>
         <div class="sidebar-open5">
           <div class="profil5">
-            <img class="image-1-icon6" alt="" src="./public/image-11@2x.png" />
+            <img class="image-1-icon5" alt="" src="./public/image-1@2x.png" />
 
             <div class="content5">
               <div class="title5">ABC</div>
@@ -123,24 +123,33 @@
         </div>
         <div class="group-parent3">
           <div class="group-wrapper2">
-            <div class="rectangle-parent1">
+            <div class="rectangle-container">
               <div class="group-child2"></div>
               <div class="document-uploded-pdf">
                 <div class="document-uploded-pdf-child"></div>
                 <img class="print-icon" alt="" src="./public/print.svg" />
 
                 <div class="printer1">Printer1</div>
-                <b class="c-sn">Có sẵn</b>
+                <b class="available">Có sẵn</b>
+
+                 
               </div>
+             
             </div>
+             <!-- <div class="document-uploded-pdf">
+                <div class="document-uploded-pdf-child"></div>
+                <img class="print-icon" alt="" src="./public/print.svg" />
+                <div class="printer1">Printer1</div>
+                <b class="available">Available </b>
+              </div> -->
           </div>
           <div class="print-button4">
             <div class="print-button-child2"></div>
-            <div class="bt">BẬT</div>
+            <button id="enableButton" class="enable">Bật</button>
           </div>
           <div class="print-button5">
             <div class="print-button-child3"></div>
-            <div class="bt">TẮT</div>
+            <button id="disableButton" class="enable">Tắt</button>
           </div>
         </div>
         <div class="group-parent4">
@@ -154,41 +163,38 @@
                         <div class="group-child3"></div>
                       </div>
                       <div class="dropdown11">
-                        <div class="number4">Mã máy in</div>
-                        <div class="dropdown-child5"></div>
-                        <div class="sony">000001</div>
+                        <label for="number4">Mã máy</label>
+                        <input type="text" id="idInput" class="input-field">
                       </div>
                     </div>
                     <div class="print-button6">
                       <div class="print-button-child2"></div>
-                      <div class="bt">Thêm</div>
+                      <button id="addButton" class="enable">Thêm</button>
                     </div>
                   </div>
                   <div class="dropdown12">
-                    <div class="number4">Nhà sản xuất</div>
-                    <div class="dropdown-child5"></div>
-                    <div class="sony">Sony</div>
+                    <label for="number4">Nhà sản xuất</label>
+                    <!-- <div class="dropdown-child4"></div>
+                    <div class="sony">Sony</div> -->
+                    <input type="text" id="manuInput" class="input-field">
                   </div>
                 </div>
               </div>
               <div class="dropdown13">
-                <div class="number4">Mẫu máy</div>
-                <div class="dropdown-child5"></div>
-                <div class="sony">XYZ</div>
+                <label for="number4">Mẫu máy</label>
+                <!-- <div class="dropdown-child4"></div>
+                <div class="sony">XYZ</div> -->
+                <input type="text" id="modelInput" class="input-field">
               </div>
             </div>
             <div class="dropdown14">
-              <div class="number4">Vị trí</div>
-              <div class="dropdown-child8"></div>
-              <img class="vector-icon2" alt="" src="./public/vector1.svg" />
-
-              <div class="sony">101-A1</div>
+              <label for="locationInput">Vị trí</label>
+              <select id="locationInput" class="input-field"></select>
             </div>
           </div>
           <div class="dropdown15">
-            <div class="number4">Đặt tên gợi nhớ</div>
-            <div class="dropdown-child5"></div>
-            <div class="sony">Printer5</div>
+            <label for="number4">Đặt tên gợi nhớ</label>
+            <input type="text" id="nameInput" class="input-field">
           </div>
         </div>
       </div>
@@ -215,6 +221,36 @@
           window.location.href = "./LoginSPSOPage.html";
         });
       }
+      const hardcodedLocations = [
+  " 101-A1",
+  " 102-B2",
+  " 103-C3",
+  
+];
+
+// Function to populate the location dropdown
+function populateLocationDropdown() {
+  const locationDropdown = document.getElementById("locationInput");
+
+   
+  locationDropdown.innerHTML = "";
+
+  
+  hardcodedLocations.forEach(location => {
+    const option = document.createElement("option");
+    option.value = location;
+    option.textContent = location;
+    locationDropdown.appendChild(option);
+  });
+}
+
+
+populateLocationDropdown();
+
+ 
+
+  
       </script>
+      <script src="SPSOConfPr.js"></script>
   </body>
 </html>
