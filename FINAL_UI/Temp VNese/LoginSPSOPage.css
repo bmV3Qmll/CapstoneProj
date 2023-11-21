@@ -1,4 +1,4 @@
- .loginspsopage-child {
+.loginspsopage-child {
   position: absolute;
   top: 0;
   left: 842px;
@@ -65,6 +65,7 @@
   position: absolute;
   top: 296px;
   left: 124px;
+  width: 16%;
 }
 .image-1-icon12 {
   position: relative;
@@ -147,6 +148,6 @@
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
-  border-radius: var(--br-31xl); /* Adjust this value as needed */
-  border: 1px solid var(--color-royalblue-100); /* Add a border for better visibility */
+  border-radius: var(--br-31xl);  
+  border: 1px solid var(--color-royalblue-100);  
 }
