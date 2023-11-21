@@ -8,14 +8,6 @@
     <link rel="stylesheet" href="./SPSOLog.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Alegreya Sans:wght@400&display=swap"
     />
     <link
@@ -24,11 +16,11 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Radio Canada:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
     />
     <link
       rel="stylesheet"
@@ -36,12 +28,24 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto Condensed:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Abel:wght@400&display=swap"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Abel:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:wght@400&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Zen Kaku Gothic Antique:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
+    />
+    <!-- Add this in the head section of your HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
   </head>
   <body>
     <div class="spsolog">
@@ -117,11 +121,7 @@
           </div>
           <div class="sidebar-open">
             <div class="profil">
-              <img
-                class="image-1-icon1"
-                alt=""
-                src="./public/image-11@2x.png"
-              />
+              <img class="image-1-icon" alt="" src="./public/image-1@2x.png" />
 
               <div class="content">
                 <div class="title">ABC</div>
@@ -181,7 +181,7 @@
               </div>
             </div>
           </div>
-          <img class="group-item" alt="" src="./public/vector-340.svg" />
+          <img class="group-child" alt="" src="./public/vector-340.svg" />
 
           <div class="group-div">
             <div class="frame-parent1">
@@ -189,19 +189,19 @@
                 <div class="div18">#</div>
               </div>
               <div class="wrapper">
-                <div class="ngy">Ngày</div>
+                <div class="date">Ngày</div>
               </div>
               <div class="container">
-                <div class="my-in">Máy in</div>
+                <div class="printer">Máy in</div>
               </div>
               <div class="frame">
-                <div class="mssv">MSSV</div>
+                <div class="stu-id">MSSV</div>
               </div>
-              <div class="in-a4-trang-wrapper">
-                <div class="in-a4-trang">In (A4) trang</div>
+              <div class="print-a4-wrapper">
+                <div class="print-a4">In (A4) trang</div>
               </div>
-              <div class="in-a3-trang-wrapper">
-                <div class="in-a4-trang">In (A3) trang</div>
+              <div class="print-a3-wrapper">
+                <div class="print-a4">In (A3) trang</div>
               </div>
             </div>
             <div class="frame-parent2">
@@ -223,39 +223,37 @@
                 <div class="div5">5</div>
               </div>
             </div>
+            
           </div>
         </div>
-        <div class="rectangle-group">
-          <div class="group-inner"></div>
+        <div class="rectangle-parent">
+          <div class="group-item"></div>
           <div class="print-button">
-            <div class="print-button-child"></div>
-            <div class="kim-tra">Kiểm tra</div>
+             
+            <button id="checkButton" class="check">Kiểm tra</button>
           </div>
           <div class="group-wrapper">
-            <div class="t-ngy-parent">
-              <div class="t-ngy">Từ ngày</div>
-              <div class="n">đến</div>
-              <div class="div25">01/10/2023</div>
-              <div class="div26">01/10/2023</div>
-            </div>
+            <div class="from-parent">
+               <div class="from">Từ</div>
+  <input type="date" id="fromDateInput" class="frombox" data-input>
+
+  <div class="to">đến</div>
+  <input type="date" id="toDateInput" class="tobox" data-input>
           </div>
           <div class="dropdown1">
-            <div class="size">Máy in</div>
-            <div class="dropdown-child"></div>
-            <img class="vector-icon" alt="" src="./public/vector.svg" />
+            <label for="printerInput">Máy in</label>
+            <select id="printerInput"class="input-field"></select>
+             
 
-            <div class="tt-c">Tất cả</div>
+            
           </div>
           <div class="dropdown-parent">
             <div class="dropdown2">
-              <div class="size1">Sinh viên</div>
-              <img
-                class="dropdown-item"
-                alt=""
-                src="./public/rectangle-1566.svg"
-              />
+              <label for="studentInput">Sinh viên</label>
+              <input type="tex" id="studentInput" clas="input-field"> </select>
+               
 
-              <div class="tt-c1">Tất cả</div>
+              
             </div>
             <img class="search-icon" alt="" src="./public/search.svg" />
           </div>
@@ -284,6 +282,66 @@
           window.location.href = "./LoginSPSOPage.html";
         });
       }
+      const hardcodedLocations = [
+  " Printer1",
+  " Printer2",
+  " Printer3",
+  
+];
+
+// Function to populate the location dropdown
+function populateLocationDropdown() {
+  const locationDropdown = document.getElementById("printerInput");
+
+   
+  locationDropdown.innerHTML = "";
+
+  
+  hardcodedLocations.forEach(location => {
+    const option = document.createElement("option");
+    option.value = location;
+    option.textContent = location;
+    locationDropdown.appendChild(option);
+  });
+}
+populateLocationDropdown();
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var checkButton = document.getElementById("checkButton");
+//   if(checkButton) {
+//     checkButton.addEventListener("click", function() {
+//       alert("History!");
+//       return;
+//     })
+//   }
+// })
+document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Flatpickr for "From" date input
+    flatpickr("#fromDateInput", {
+      enableTime: false, // Set to true if you want to include time
+      dateFormat: "Y-m-d",
+    });
+
+    // Initialize Flatpickr for "To" date input
+    flatpickr("#toDateInput", {
+      enableTime: false,
+      dateFormat: "Y-m-d",
+    });
+
+    var checkButton = document.getElementById("checkButton");
+    if (checkButton) {
+      checkButton.addEventListener("click", function () {
+        // Retrieve selected dates
+        
+        var fromDate = document.getElementById("fromDateInput").value;
+        var toDate = document.getElementById("toDateInput").value;
+        var studentInput = document.getElementById("studentInput").value;
+        var printerInput = document.getElementById("printerInput").value;
+        alert("Khoảng thời gian: " + fromDate + " đến " + toDate+" Sinh viên "+studentInput + printerInput + " đã in 5A4 and 5A3");
+      });
+    }
+  });
       </script>
   </body>
 </html>
