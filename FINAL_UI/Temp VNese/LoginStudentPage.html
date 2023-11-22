@@ -49,14 +49,17 @@
       <div class="loginstudentpage-item"></div>
       <div class="loginstudentpage-inner"></div>
       <div class="tn-ng-nhp">Tên đăng nhập:</div>
+      <input type="text" class="loginstudentpage-item" id="username" />
+      <input type="text" class="loginstudentpage-inner" id="password" />
       <div class="bn-l-nhn">Bạn là nhân viên SPSO?</div>
+      
       <b class="trang-ng-nhp">Trang đăng nhập cho sinh viên </b>
       <div class="rectangle-parent" id="groupContainer">
         <div class="group-child"></div>
         <div class="ng-nhp">Đăng nhập</div>
       </div>
       <div class="mt-khu">Mật khẩu:</div>
-      <div class="image-1-parent" id="frameContainer">
+      <button class="image-1-parent" id="frameContainer">
         <img class="image-1-icon" alt="" src="./public/image-1@2x.png" />
 
         <div class="trang-ng-nhp1">Trang đăng nhập cho SPSO</div>
@@ -68,13 +71,6 @@
     </div>
 
     <script>
-      var groupContainer = document.getElementById("groupContainer");
-      if (groupContainer) {
-        groupContainer.addEventListener("click", function (e) {
-          window.location.href = "./StudentMain.html";
-        });
-      }
-      
       var frameContainer = document.getElementById("frameContainer");
       if (frameContainer) {
         frameContainer.addEventListener("click", function (e) {
@@ -82,5 +78,30 @@
         });
       }
       </script>
+      <script>
+      document.getElementById('groupContainer').addEventListener('click', function(event) {
+        // Prevent the default form submission behavior
+      
+        var enteredUsername = document.getElementById('username').value;
+        var enteredPassword = document.getElementById('password').value;
+    
+        // Hardcoded user credentials
+        var users = [
+          { username: 'user1', password: 'pass1' },
+          { username: 'user2', password: 'pass2' }
+          // Add more users as needed
+        ];
+    
+        let userExists = users.some(user => user.username === enteredUsername && user.password === enteredPassword);
+        if (userExists) {
+          alert('Login successful!');
+          window.location.href = "./StudentMain.html";
+          // Redirect to another page or change the UI accordingly
+        } else {
+          alert('Invalid username or password');
+          return;
+        }
+      });
+    </script>
   </body>
 </html>

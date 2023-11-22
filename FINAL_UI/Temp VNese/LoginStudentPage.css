@@ -144,3 +144,6 @@
   color: var(--color-black);
   font-family: var(--dispaly-16-medium);
 }
+.frameContainer{
+  z-index: 999;
+}
