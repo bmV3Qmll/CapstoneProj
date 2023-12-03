@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var addButton = document.getElementById("addButton");
   var enableButton = document.getElementById("enableButton");
   var disableButton = document.getElementById("disableButton");
+  var status = document.getElementById("availabilityStatus");
   if (addButton) {
     var id= document.getElementById("idInput");
     var manuName= document.getElementById("manuInput");
@@ -17,6 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "location": location.value,
         "name": name.value
       };
+      if(id.value == "" || manuName.value =="" || model.value == ""|| location.value =="" || name.value =="")
+      {
+        alert("Vui lòng hoàn thành thao tác!!");
+        return;
+      }
 
     alert("Đã thêm máy in!")
 
@@ -28,30 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
     name.value = "";
     });
   }
-  if(enableButton) {
-    enableButton.addEventListener("click", function() {
-       
-      alert("Bật máy in!");
-      var printerStatus = document.querySelector(".printer1");
-      var availabilityLabel = document.querySelector(".available");
-      if (printerStatus && availabilityLabel) {
-        printerStatus.textContent = "Available";
-        availabilityLabel.classList.add("available");
-        availabilityLabel.classList.remove("notavailable");
-      }
-    });
-  }
-  if(disableButton) {
-    disableButton.addEventListener("click", function() {
-       
-      alert("Tắt máy in!");
-      var printerStatus = document.querySelector(".printer1");
-      var availabilityLabel = document.querySelector(".notavailable");
-      if (printerStatus && availabilityLabel) {
-        printerStatus.textContent = "Not vailable";
-        availabilityLabel.classList.add("notavailable");
-        availabilityLabel.classList.remove("available");
-      }
-    });
-  }
+  enableButton.addEventListener("click", function () {
+    // Enable printer
+    availabilityStatus.textContent = "Có sẵn";
+  });
+
+  disableButton.addEventListener("click", function () {
+    // Disable printer
+    availabilityStatus.textContent = "Không sẵn";
+  });
 });
