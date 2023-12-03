@@ -317,31 +317,38 @@ populateLocationDropdown();
 //   }
 // })
 document.addEventListener("DOMContentLoaded", function () {
-    // Initialize Flatpickr for "From" date input
-    flatpickr("#fromDateInput", {
-      enableTime: false, // Set to true if you want to include time
-      dateFormat: "Y-m-d",
-    });
-
-    // Initialize Flatpickr for "To" date input
-    flatpickr("#toDateInput", {
-      enableTime: false,
-      dateFormat: "Y-m-d",
-    });
-
-    var checkButton = document.getElementById("checkButton");
-    if (checkButton) {
-      checkButton.addEventListener("click", function () {
-        // Retrieve selected dates
-        
-        var fromDate = document.getElementById("fromDateInput").value;
-        var toDate = document.getElementById("toDateInput").value;
-        var studentInput = document.getElementById("studentInput").value;
-        var printerInput = document.getElementById("printerInput").value;
-        alert("Khoảng thời gian: " + fromDate + " đến " + toDate+" Sinh viên "+studentInput + printerInput + " đã in 5A4 and 5A3");
-      });
-    }
+  // Initialize Flatpickr for "From" date input
+  flatpickr("#fromDateInput", {
+    enableTime: false,
+    dateFormat: "Y-m-d",
   });
+
+  // Initialize Flatpickr for "To" date input
+  flatpickr("#toDateInput", {
+    enableTime: false,
+    dateFormat: "Y-m-d",
+  });
+
+  var checkButton = document.getElementById("checkButton");
+  if (checkButton) {
+    checkButton.addEventListener("click", function () {
+      // Retrieve selected dates
+      var fromDate = document.getElementById("fromDateInput").value;
+      var toDate = document.getElementById("toDateInput").value;
+      var studentInput = document.getElementById("studentInput").value;
+      var printerInput = document.getElementById("printerInput").value;
+
+      // Check if the start date is earlier than the end date
+      if (fromDate && toDate && new Date(fromDate) > new Date(toDate)) {
+        alert("Ngày bắt đầu không thể sau ngày kết thúc. Vui lòng kiểm tra lại.");
+        return;
+      }
+
+      alert("Khoảng thời gian: " + fromDate + " đến " + toDate + " Sinh viên " + studentInput + " Máy in " + printerInput + " đã in 5A4 và 5A3");
+    });
+  }
+});
+
       </script>
   </body>
 </html>
