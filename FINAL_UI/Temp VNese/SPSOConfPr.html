@@ -130,12 +130,14 @@
                 <img class="print-icon" alt="" src="./public/print.svg" />
 
                 <div class="printer1">Printer1</div>
-                <b class="available">Có sẵn</b>
-
+                <b class="available" id="availabilityStatus">Có sẵn</b>
+                
+                 
                  
               </div>
              
             </div>
+            
              <!-- <div class="document-uploded-pdf">
                 <div class="document-uploded-pdf-child"></div>
                 <img class="print-icon" alt="" src="./public/print.svg" />
@@ -221,33 +223,83 @@
           window.location.href = "./LoginSPSOPage.html";
         });
       }
+      
+      
       const hardcodedLocations = [
-  " 101-A1",
-  " 102-B2",
-  " 103-C3",
-  
-];
+    " 101-A1",
+    " 102-B2",
+    " 103-C3",
+  ];
 
-// Function to populate the location dropdown
-function populateLocationDropdown() {
-  const locationDropdown = document.getElementById("locationInput");
+  // Function to populate the location dropdown
+  function populateLocationDropdown() {
+    const locationDropdown = document.getElementById("locationInput");
+    locationDropdown.innerHTML = "";
+    hardcodedLocations.forEach(location => {
+      const option = document.createElement("option");
+      option.value = location;
+      option.textContent = location;
+      locationDropdown.appendChild(option);
+    });
+  }
 
-   
-  locationDropdown.innerHTML = "";
+  // Function to populate the printer dropdown
+  function populatePrinterDropdown() {
+    const printerSelect = document.getElementById("printerSelect");
+    printerSelect.innerHTML = "";
+    printers.forEach(printer => {
+      const option = document.createElement("option");
+      option.value = printer.id;
+      option.textContent = printer.name;
+      printerSelect.appendChild(option);
+    });
+  }
 
-  
-  hardcodedLocations.forEach(location => {
-    const option = document.createElement("option");
-    option.value = location;
-    option.textContent = location;
-    locationDropdown.appendChild(option);
+  // Function to enable/disable a printer
+  function togglePrinterStatus(status) {
+    const selectedPrinterId = printerSelect.value;
+    const selectedPrinter = printers.find(printer => printer.id === selectedPrinterId);
+    if (selectedPrinter) {
+      selectedPrinter.status = status;
+      // Add logic to update the UI or send a request to the server to reflect the status change
+      console.log(`Printer ${selectedPrinter.name} is now ${status === 'enable' ? 'enabled' : 'disabled'}`);
+    }
+  }
+
+  // Add click event listeners for enable and disable buttons
+  const enableButton = document.getElementById("enableButton");
+  const disableButton = document.getElementById("disableButton");
+
+  enableButton.addEventListener("click", function () {
+    togglePrinterStatus("enable");
   });
-}
 
+  disableButton.addEventListener("click", function () {
+    togglePrinterStatus("disable");
+  });
 
-populateLocationDropdown();
+  // Example: Adding a new printer
+  document.getElementById("addButton").addEventListener("click", function () {
+    const newPrinter = {
+      id: "printerId", // Replace with a unique ID for the new printer
+      name: document.getElementById("nameInput").value,
+      status: "enable", // New printer is enabled by default
+    };
+    printers.push(newPrinter);
+    populatePrinterDropdown();
+  });
 
- 
+  // Your existing code
+
+  // Initial printer list (replace this with your actual data)
+  const printers = [
+    { id: "printer1", name: "Printer 1", status: "enable" },
+    { id: "printer2", name: "Printer 2", status: "enable" },
+    // Add more printers as needed
+  ];
+
+  // Populate the initial printer dropdown
+  populatePrinterDropdown();
 
   
       </script>
