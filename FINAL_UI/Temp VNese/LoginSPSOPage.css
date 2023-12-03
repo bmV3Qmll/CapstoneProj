@@ -65,7 +65,8 @@
   position: absolute;
   top: 296px;
   left: 124px;
-  width: 21%;
+  width: 285px;
+  
 }
 .image-1-icon12 {
   position: relative;
@@ -151,3 +152,5 @@
   border-radius: var(--br-31xl);  
   border: 1px solid var(--color-royalblue-100);  
 }
+ 
+ 
