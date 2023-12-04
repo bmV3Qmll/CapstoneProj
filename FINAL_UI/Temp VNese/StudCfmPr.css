@@ -48,6 +48,8 @@
   left: 11.47px;
   display: inline-block;
   width: 53.18px;
+  /* z-index: 999; */
+  background-color: var(--color-cornflowerblue-200);
 }
 .print-button7 {
   position: absolute;
@@ -60,10 +62,14 @@
 }
 .mc-nh {
   position: absolute;
-  top: 4px;
-  left: 3px;
+  top: 5.89px;
+  left: 250px;
   display: inline-block;
-  width: 65px;
+  width: 60.47px;
+  height: 35px;
+  background-color: var(--color-cornflowerblue-200);
+  z-index: 999;
+
 }
 .print-button8 {
   position: absolute;
@@ -566,11 +572,20 @@
   color: var(--color-white1);
   font-family: var(--font-roboto);
 }
-#Addbutton{
+/* #Addbutton{
   z-index: 999;
   background-color: var(--color-cornflowerblue-200);
   color: var(--color-black); 
   border: var(--color-cornflowerblue-200);
   border-radius: 5px;  
   cursor: pointer;  
-}
+  left:  60px;
+} */
+/* #Addbutton2{
+  z-index: 999;
+  background-color: var(--color-cornflowerblue-200);
+  color: var(--color-black); 
+  border: var(--color-cornflowerblue-200);
+  border-radius: 5px;  
+  cursor: pointer;  
+} */
