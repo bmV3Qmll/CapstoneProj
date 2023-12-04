@@ -59,7 +59,7 @@
             <div class="upload-files-item"></div>
             <div class="print-button7">
               <div class="print-button-child5"></div>
-              <div class="in">In</div>
+              <button id="Addbutton2" class="in">In</div>
             </div>
             <div class="print-button8">
               <!-- <div class="print-button-child5"></div> -->
@@ -202,7 +202,7 @@
 
             <div class="label30">Trợ giúp</div>
           </div>
-          <div class="link34">
+          <div class="link34" id="linkContainer3">
             <img
               class="analytics-1-icon2"
               alt=""
@@ -221,14 +221,19 @@
         linkContainer1.addEventListener("click", function (e) {
           window.location.href = "./StudBKP.html";
         });
-      }
-      
+      }     
       var linkContainer2 = document.getElementById("linkContainer2");
       if (linkContainer2) {
         linkContainer2.addEventListener("click", function (e) {
           window.location.href = "./StudLog.html";
         });
       }
+      var linkContainer3 = document.getElementById("linkContainer3");
+      if (linkContainer3) {
+        linkContainer3.addEventListener("click", function (e) {
+          window.location.href = "./LoginStudentPage.html";
+        });
+      } 
       </script>
       <script src="StudCfmPr.js"></script>
 
