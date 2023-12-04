@@ -13,11 +13,3 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     
 });
-// document.addEventListener("upload-files-item",function(){
-//     var Addbutton2 = document.getElementById("Addbutton2");
-//     if (Addbutton2){
-//         Addbutton2.addEventListener("click",function(){
-//             alert("In thành công !");
-//         });
-//     }
-// });
